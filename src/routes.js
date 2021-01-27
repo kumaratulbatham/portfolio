@@ -37,6 +37,11 @@ const Routes = () => {
           <Route path="/new" component={(props) => <Dashboard {...props} />} />
         </DefaultLayout>
       </Route>
+      <Route path="*">
+        <DefaultLayout>
+                <Redirect to="/home" />
+        </DefaultLayout>
+      </Route>
     </Switch>
   );
 };

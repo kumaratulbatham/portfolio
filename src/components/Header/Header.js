@@ -50,7 +50,7 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: window.location.pathname === '/' ? '/home' : window.location.pathname,
+      value: window.location.pathname === '/portfolio/' ? '/home' : window.location.pathname,
       classes: this.props,
     }
   }
@@ -80,9 +80,9 @@ class Header extends Component {
                 <Grid container alignItems="flex-start" style={{ paddingTop: 4 }} spacing={3}>
 
                   <Tabs classes={{ indicator: this.props.classes.bigIndicator }} className={this.props.classes.tabsCss} value={this.state.value} onChange={this.handleChange} >
-                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/home" to="/home" component={Link} label="Home"></Tab>
-                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/contact" to="/contact" component={Link} label="Contact Us"></Tab>
-                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/about" to="/about" component={Link} label="About Us"></Tab>
+                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/portfolio/home" to="/home" component={Link} label="Home"></Tab>
+                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/portfolio/contact" to="/contact" component={Link} label="Contact Us"></Tab>
+                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/portfolio/about" to="/about" component={Link} label="About Us"></Tab>
                     {/* <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/new" to="/new" component={Link} label="New Page"></Tab> */}
                   </Tabs>
                 </Grid>

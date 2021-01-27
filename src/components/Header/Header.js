@@ -50,7 +50,7 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: window.location.pathname,
+      value: window.location.pathname === '/' ? '/home' : window.location.pathname,
       classes: this.props,
     }
   }
@@ -59,6 +59,7 @@ class Header extends Component {
   };
 
   render() {
+
     return (
       <React.Fragment>
         <AppBar

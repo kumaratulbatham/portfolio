@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.737e9c6f.chunk.css",
+    "main.js": "/portfolio/static/js/main.0017e2ad.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0017e2ad.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.f5a054cc.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.f5a054cc.js.map",
+    "static/js/2.5f4ae62b.chunk.js": "/portfolio/static/js/2.5f4ae62b.chunk.js",
+    "static/js/2.5f4ae62b.chunk.js.map": "/portfolio/static/js/2.5f4ae62b.chunk.js.map",
+    "static/js/3.230ba72b.chunk.js": "/portfolio/static/js/3.230ba72b.chunk.js",
+    "static/js/3.230ba72b.chunk.js.map": "/portfolio/static/js/3.230ba72b.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.737e9c6f.chunk.css.map": "/portfolio/static/css/main.737e9c6f.chunk.css.map",
+    "static/js/2.5f4ae62b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5f4ae62b.chunk.js.LICENSE.txt",
+    "static/media/Atul_resume_Cambria.docx": "/portfolio/static/media/Atul_resume_Cambria.0629c5ef.docx",
+    "static/media/atul_kumar.jpg": "/portfolio/static/media/atul_kumar.96bcda7a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5a054cc.js",
+    "static/js/2.5f4ae62b.chunk.js",
+    "static/css/main.737e9c6f.chunk.css",
+    "static/js/main.0017e2ad.chunk.js"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.737e9c6f.chunk.css",
+    "main.js": "/static/js/main.814c6108.chunk.js",
+    "main.js.map": "/static/js/main.814c6108.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3641790e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3641790e.js.map",
+    "static/js/2.5f4ae62b.chunk.js": "/static/js/2.5f4ae62b.chunk.js",
+    "static/js/2.5f4ae62b.chunk.js.map": "/static/js/2.5f4ae62b.chunk.js.map",
+    "static/js/3.230ba72b.chunk.js": "/static/js/3.230ba72b.chunk.js",
+    "static/js/3.230ba72b.chunk.js.map": "/static/js/3.230ba72b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.737e9c6f.chunk.css.map": "/static/css/main.737e9c6f.chunk.css.map",
+    "static/js/2.5f4ae62b.chunk.js.LICENSE.txt": "/static/js/2.5f4ae62b.chunk.js.LICENSE.txt",
+    "static/media/Atul_resume_Cambria.docx": "/static/media/Atul_resume_Cambria.0629c5ef.docx",
+    "static/media/atul_kumar.jpg": "/static/media/atul_kumar.96bcda7a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3641790e.js",
+    "static/js/2.5f4ae62b.chunk.js",
+    "static/css/main.737e9c6f.chunk.css",
+    "static/js/main.814c6108.chunk.js"
+  ]
+}

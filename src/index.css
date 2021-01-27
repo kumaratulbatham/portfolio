@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+}
+
+
+.add-margin{
+  margin: 0 !important;
+}
+
+.myColor:hover {
+  color: #ffffff !important;
+}
+
+.bck_red {
+  background: #3f51b5;
+}
+
+footer .footer_copyright {
+  font-size: 14px;
+  padding-top: 40px;
+}
+
+footer {
+  padding: 0px;
+  height: 90px;
+  position: static;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  color:#ffffff;
+}

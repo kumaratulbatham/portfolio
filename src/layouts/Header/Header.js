@@ -6,7 +6,7 @@ import AppBar from "@material-ui/core/AppBar";
 // import Tabs from "@material-ui/core/Tabs";
 import Toolbar from "@material-ui/core/Toolbar";
 
-import LogoComponent from "../logo";
+import LogoComponent from "../../components/logo";
 import NavItem from "./NavItem";
 
 const lightColor = "rgba(255, 255, 255, 0.7)";

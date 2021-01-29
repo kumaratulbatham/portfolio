@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import PropTypes from 'prop-types';
-import Grid from '@material-ui/core/Grid';
-import AppBar from '@material-ui/core/AppBar';
-import { withStyles } from '@material-ui/core/styles';
-import Tab from '@material-ui/core/Tab';
-import Tabs from '@material-ui/core/Tabs';
-import Toolbar from '@material-ui/core/Toolbar';
+import React from "react";
+// import PropTypes from "prop-types";
+import { Grid, List, makeStyles } from "@material-ui/core";
+import AppBar from "@material-ui/core/AppBar";
+// import Tab from "@material-ui/core/Tab";
+// import Tabs from "@material-ui/core/Tabs";
+import Toolbar from "@material-ui/core/Toolbar";
 
-import LogoComponent from '../logo';
+import LogoComponent from "../logo";
+import NavItem from "./NavItem";
 
+const lightColor = "rgba(255, 255, 255, 0.7)";
 
-const lightColor = 'rgba(255, 255, 255, 0.7)';
-
-const styles = theme => ({
+const useStyles = makeStyles((theme) => ({
   secondaryBar: {
     zIndex: 0,
     height: 90,
@@ -26,9 +24,9 @@ const styles = theme => ({
   },
   link: {
     width: 110,
-    textDecoration: 'none',
-    color: 'white',
-    '&:hover': {
+    textDecoration: "none",
+    color: "white",
+    "&:hover": {
       color: theme.palette.common.white,
     },
   },
@@ -36,35 +34,51 @@ const styles = theme => ({
     borderColor: lightColor,
   },
   bigIndicator: {
-    height: 0
+    height: 0,
   },
   tabsCss: {
     height: 30,
     width: "100%",
-    textAlign: 'right'
-  }
-});
+    textAlign: "right",
+  },
+}));
 
-class Header extends Component {
+const items = [
+  {
+    href: "home",
+    title: "Home",
+  },
+  {
+    href: "contact",
+    title: "Contact Us",
+  },
+  {
+    href: "about",
+    title: "About Us",
+  },
+  {
+    href: "new",
+    title: "New Page",
+  },
+];
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: window.location.pathname === '/portfolio/' ? '/home' : window.location.pathname,
-      classes: this.props,
-    }
-  }
-  handleChange = (event, value) => {
-    this.setState({ value });
-  };
+const Header = () => {
+  const classes = useStyles();
 
-  render() {
+  const content = (
+    <List style={{ display: "flex", width: "70%" }}>
+      {items.map((item) => (
+        <NavItem href={item.href} key={item.title} title={item.title} />
+      ))}
+    </List>
+  );
 
-    return (
-      <React.Fragment>
+  return (
+    <React.Fragment>
+      <header>
         <AppBar
           component="div"
-          className={this.props.classes.secondaryBar}
+          className={classes.secondaryBar}
           color="primary"
           position="static"
           elevation={0}
@@ -77,26 +91,24 @@ class Header extends Component {
                 </Grid>
               </Grid>
               <Grid item xs={6}>
-                <Grid container alignItems="flex-start" style={{ paddingTop: 4 }} spacing={3}>
-
-                  <Tabs classes={{ indicator: this.props.classes.bigIndicator }} className={this.props.classes.tabsCss} value={this.state.value} onChange={this.handleChange} >
-                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/portfolio/home" to="/home" component={Link} label="Home"></Tab>
-                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/portfolio/contact" to="/contact" component={Link} label="Contact Us"></Tab>
-                    <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/portfolio/about" to="/about" component={Link} label="About Us"></Tab>
-                    {/* <Tab style={{ padding: 0, width: 100 }} className="myColor" textColor="inherit" value="/new" to="/new" component={Link} label="New Page"></Tab> */}
-                  </Tabs>
+                <Grid
+                  container
+                  alignItems="flex-start"
+                  style={{ paddingTop: 4 }}
+                  spacing={3}
+                >
+                  {content}
                 </Grid>
               </Grid>
             </Grid>
-
           </Toolbar>
         </AppBar>
-      </React.Fragment>
-    );
-  }
-}
-
-Header.propTypes = {
-  classes: PropTypes.object.isRequired,
+      </header>
+    </React.Fragment>
+  );
 };
-export default withStyles(styles)(Header);
+
+// Header.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
+export default Header;

@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 import * as Constants from '../../shared/constants';
 
-const logo = require("../../../src/assets/images/atul_kumar.jpg");
-const resume = require("../../../src/assets/images/Atul_resume_Cambria.docx");
+import logo from "../../../src/assets/images/atul_kumar.jpg";
+import resume from "../../../src/assets/images/Atul_resume_Cambria.docx";
 
 
 const styles = (theme) => ({

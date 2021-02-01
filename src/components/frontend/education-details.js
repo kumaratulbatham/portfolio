@@ -16,7 +16,7 @@ import HotelIcon from "@material-ui/icons/Hotel";
 
 const styles = (theme) => ({
   main: {
-    width: "500 !important",
+    width: "100%",
     display: "block", // Fix IE 11 issue.
     marginLeft: theme.spacing(4),
     marginRight: theme.spacing(4),
@@ -29,6 +29,7 @@ const styles = (theme) => ({
   paper: {
     marginTop: theme.spacing(8),
     display: "flex",
+    width: '100%',
     // flexDirection: "column",
     alignItems: "center",
     padding: `${theme.spacing(2)}px ${theme.spacing(3)}px ${
